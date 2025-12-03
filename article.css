@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.main-header {
+    background-color: #333;
+    padding: 20px;
+    border-bottom: 5px solid #0056b3;
+}
+.main-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.article-section {
+    width: 80%;
+    margin: 40px auto; 
+    padding: 30px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    position: relative;    
+}
+.article-section h1 {
+    margin-top: 0;
+}
+.article-image {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: auto;
+}
+.article-section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.red-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+    padding: 5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.status-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid #333;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.status-button:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
